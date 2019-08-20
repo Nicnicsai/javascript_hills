@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+
+
+
+    var check = false;
+
+    while(check === false){
+
+        var Age = prompt("Age?");
+        var Gender = prompt("Gender?");
+        var Town = prompt("Town?");
+
+        check = confirm(Age +Gender +Town);
+    }
+    alert("Thank you!")
+
 
 })();
