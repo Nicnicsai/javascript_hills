@@ -17,6 +17,13 @@
 
         // your code here
 
+        var x = document.getElementById('numbers').value;
+        var y = x.split(',').map(Number);
+
+       y.sort(function(y,z){return y-z});
+
+       window.alert(y);
+
     });
 
 })();
