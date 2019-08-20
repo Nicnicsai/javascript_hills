@@ -11,9 +11,27 @@
 
 (function() {
 
+
+
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+
+var i;
+for (i = 1; i < 22; i++) {
+    alert(i*i);
+}
+
+
+
+        /*
+         //code Koen
+    var square = Math.sqrt("x");
+    var x = ["1","2","3"];
+
+        x.forEach(function(value) {
+           console.log(Math.sqrt(value));
+        }); */
 
     });
 
