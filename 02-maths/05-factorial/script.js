@@ -17,6 +17,26 @@
 
         // your code here
 
+       var n = Number(document.getElementById("number").value);
+            // 3
+        var total = 1;
+
+
+         for (let i = 1; i <= n; i++) {
+
+            total = total * i;
+
+            console.log(total);
+        }
+
+        // show the result
+        alert (total);
+
+
+         //loop
+        // x-keer erover
+
+
     });
 
 })();
