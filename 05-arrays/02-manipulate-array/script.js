@@ -24,6 +24,14 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener('click', function () {
+
+        fruits[0] = "banana";
+        fruits[9] = "kiwi";
+
+        alert(fruits);
+
+    });
+
 
 })();
