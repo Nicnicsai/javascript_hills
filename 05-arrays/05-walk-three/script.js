@@ -39,6 +39,15 @@
         },
     ];
 
-    // your code here
+    people.forEach(namesFunction);
+
+    function namesFunction(item) {
+
+        var names = item ["firstname"];
+        console.log(names);
+
+    }
+
+
 
 })();
