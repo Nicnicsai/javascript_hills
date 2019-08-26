@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/02-manipulate-array/script.js - 5.2: manipulation de tableau
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -24,14 +14,34 @@
         "cerise",
     ];
 
+    // click button once; remove first and last element.
+
     document.getElementById("run").addEventListener('click', function () {
+
+        fruits.pop(); //remove last element array
+        fruits.push("kiwi"); //change last element array
+        console.log(fruits.toString());
+
+
+        fruits.shift(); // remove first element
+        fruits.unshift("banana"); // ad first element
+        console.log(fruits.toString());
+
+        alert(fruits.toString());
+
+});
+
+
+
+
+    /*document.getElementById("run").addEventListener('click', function () {
 
         fruits[0] = "banana";
         fruits[9] = "kiwi";
 
         alert(fruits);
 
-    });
+    });*/
 
 
 })();

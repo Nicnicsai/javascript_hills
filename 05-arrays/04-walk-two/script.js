@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/04-walk-two/script.js - 5.4: parcours de tableau (2)
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -26,6 +16,51 @@
         "cerise",
     ];
 
-    // your code here
+    fruits.forEach(fruitsFunction);
+    //var i = 0;
+   var x = "";
+
+    function fruitsFunction(item) {
+
+        document.getElementById("run").addEventListener('click',function () {
+
+
+            console.log(x = item);
+        //console.log(item);
+
+        })
+
+
+    }
+
+
+
+
+
+
 
 })();
+
+
+/*
+fLen = fruits.length;
+var x = "";
+var i = 0;
+
+document.getElementById("run").onclick = function() {
+
+
+
+
+
+    if (i < fLen) {
+
+        x = fruits[i++]; // show the result one by one
+
+        //console.log(x += fruits[i]);
+        //console.log(fruits[i]);
+
+    }
+
+    console.log(x);
+}*/

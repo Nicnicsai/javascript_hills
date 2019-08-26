@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/01-get-element/script.js - 5.1: élément de tableau
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -26,6 +16,26 @@
         "cherry",
     ];
 
-    // your code here
 
-})();
+    fLen = fruits.length;
+    var x = "";
+    var i = 0;
+
+document.getElementById("run").onclick = function() {
+
+
+    if (i < fLen) {
+
+        x = fruits[i++]; // show the result one by one
+
+        //console.log(x += fruits[i]);
+        //console.log(fruits[i]);
+
+    }
+
+    console.log(x);
+}
+
+}());
+
+// try using a LOOP (for..) and make it work the same
