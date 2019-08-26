@@ -17,16 +17,17 @@
     ];
 
     fruits.forEach(fruitsFunction);
+
     //var i = 0;
-   var x = "";
+    //var x = "";
 
     function fruitsFunction(item) {
 
         document.getElementById("run").addEventListener('click',function () {
 
 
-            console.log(x = item);
-        //console.log(item);
+            //console.log(x = item);
+        console.log(item);
 
         })
 

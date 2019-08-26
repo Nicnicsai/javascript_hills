@@ -38,4 +38,4 @@ document.getElementById("run").onclick = function() {
 
 }());
 
-// try using a LOOP (for..) and make it work the same
+// try using a LOOP (for..) and make it work the same, add click event in for loop
