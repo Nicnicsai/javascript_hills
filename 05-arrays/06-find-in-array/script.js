@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,6 +89,39 @@
         },
     ];
 
-    // your code here
+
+    //console.log(people.firstname = "Dupont");
+
+
+        document.getElementById("run").addEventListener('click', function () {
+
+            people.forEach(function (item) {
+                //console.log(item)
+
+               //var firstName = item ["firstname"];
+                //var lastName = item ["lastname"];
+                //var email = item ["email"];
+                //var index = indexOf(item);
+
+                if ((item.firstname === "Jean") && (item.lastname === "Dupont")) {
+
+                    console.log(item);
+                    console.log(item.email);
+
+
+                    //console.log(email);
+
+                }
+
+            })
+
+
+            /*console.log(name);
+            console.log(index);*/
+
+        })
+
+
+
 
 })();

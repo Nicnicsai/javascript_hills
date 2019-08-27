@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/07-filter-array/script.js - 5.7: filtrer un tableau
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -89,6 +79,8 @@
         },
     ];
 
-    // your code here
+    // click button
+
+    // display console mail address of Jean Dupont
 
 })();
