@@ -81,6 +81,26 @@
 
     // click button
 
-    // display console mail address of Jean Dupont
+
+    document.getElementById("run").addEventListener('click',function() {
+
+        // check age ( >18) and create new array
+
+
+        var ageOver = people.filter(function(item) {
+
+           return item.age > 18;
+
+
+        });
+
+        console.log(ageOver);
+
+
+    })
+
+
+
+
 
 })();
