@@ -26,6 +26,23 @@
         "cerise",
     ];
 
-    // your code here
+   document.getElementById("run").addEventListener("click", function() {
+
+       // if  apple === true in array  > console.log
+
+        if (fruits.includes("apples")) {
+
+            console.log(fruits);
+        }
+
+        alert("doesn't include apples!");
+
+
+
+
+
+
+
+   })
 
 })();
