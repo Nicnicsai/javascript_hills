@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    let targets = document.querySelectorAll(".target");
+    targets.forEach(element => {
+        element.innerHTML = "owned!";
+
+    });
+
 
 })();
+
+
+// terug opzoeken uitleg
