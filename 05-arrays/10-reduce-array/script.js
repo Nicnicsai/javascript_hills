@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /05-arrays/10-reduce-array/script.js - 5.10: utilisation d'un reducer
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -89,6 +79,34 @@
         },
     ];
 
-    // your code here
+document.getElementById("run").addEventListener("click", function() {
+
+
+    var sum = people.reduce(sumAges,0);  // reduce mag een functie uitvoeren in array people
+
+    function sumAges(total, person) { //sumAges mag in de array people. links altijd het totaal en rechts "element"
+        return total + person.age; //
+    }
+
+
+    //var sum = ages.reduce((a,b)=> a + b, 0);
+    console.log(sum);
+
+
+
+
+
+})
+
+
+
 
 })();
+
+//return people.age;  //array is leeg!; die kijkt enkel naar age, maar doet er niets mee..
+// altijd specifiek laten weten welk element's member je wilt zien
+/*var x = people[0];
+var y = x.age;
+console.log(y);
+console.log(people);
+*/

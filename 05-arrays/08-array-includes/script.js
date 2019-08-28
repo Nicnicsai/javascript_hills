@@ -28,7 +28,6 @@
 
    document.getElementById("run").addEventListener("click", function() {
 
-       // if  apple === true in array  > console.log
 
         if (fruits.includes("apples")) {
 
@@ -36,11 +35,6 @@
         }
 
         alert("doesn't include apples!");
-
-
-
-
-
 
 
    })

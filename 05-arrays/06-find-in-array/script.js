@@ -96,8 +96,9 @@
         document.getElementById("run").addEventListener('click', function () {
 
             people.forEach(function (item) {
-                //console.log(item)
 
+
+                //console.log(item)
                //var firstName = item ["firstname"];
                 //var lastName = item ["lastname"];
                 //var email = item ["email"];
