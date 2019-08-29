@@ -12,6 +12,7 @@
 
 
         console.log(passOne);
+
         var numberL = passOne.length; // count number of characters of value
 
 
