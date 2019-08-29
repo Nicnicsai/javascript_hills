@@ -11,6 +11,40 @@
 
 (function() {
 
-    // your code here
+
+
+
+
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        var passOne = document.getElementById("pass-one").value;
+        var passTwo = document.getElementById("pass-two").value;
+
+        var element_1 = document.getElementById("pass-one");
+        var element_2 = document.getElementById("pass-two");
+
+
+        console.log("clicked");
+        // two values same?
+
+
+        if (passOne === passTwo) {
+            document.getElementById("pass-one").style.borderColor = "silver";
+            document.getElementById("pass-two").style.borderColor = "silver";
+            //alert("good!");
+
+        } else {
+
+            element_1.classList.add("error");
+            element_2.classList.add("error");
+
+        }
+
+
+
+    })
+
+
 
 })();
