@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+
+    var x = document.createElement("TABLE");
+    x.setAttribute("id", "myTable");
+    document.getElementById("target").appendChild(x);
+
+
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    //var row2 = table.insertRow(1);
+
+    var i = 0;
+
+    for (i = 0; i < 10 ; i++) {
+        var tRow = table.insertRow(i);
+        tRow.insertCell(0);
+    }
+
+
+
+
+
 
 })();

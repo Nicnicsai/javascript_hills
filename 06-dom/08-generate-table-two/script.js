@@ -9,8 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    var x = document.createElement("TABLE");
+    x.setAttribute("id", "myTable");
+    document.getElementById("target").appendChild(x);
+
+
+    var table = document.getElementById("myTable");
+
+
+
+    for (i = 0; i < 10; i++) {
+        var tRow = table.insertRow(i);
+
+        for (y = 0; y < 10; y++) {
+            var tRow2 = tRow.insertCell(y);
+            tRow2.innerHTML = ((y+1))*(i+1);
+        }
+
+    }
+
 
 })();
+
+
+//deze oefening herbekijken

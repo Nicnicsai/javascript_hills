@@ -1,13 +1,3 @@
-/* becode/javascript
- *
- * /06-dom/06-mini-carousel/script.js - 6.6: mini carousel
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
 (function() {
 
@@ -19,6 +9,78 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    // click button
+
+    var imgSource = document.getElementsByTagName("img")[0];
+    //console.log(imgSource);
+
+
+
+    document.getElementById("next").addEventListener("click", function() {
+
+
+        // kan het opgelost worden met een forEach? nee, anders loopt het tot het einde
+
+        var firstOne = imgSource.getAttribute("src"); //link of first one
+        var firstIndex = gallery.indexOf(firstOne); // index of first one
+
+        if (firstIndex === 4) {
+            firstIndex = 0;
+
+        } else {
+
+            firstIndex ++
+        }
+
+        imgSource.setAttribute("src", gallery[firstIndex]);
+
+        console.log(firstIndex);
+
+
+
+
+       // imgSource.setAttribute("src", gallery[i+1]);
+
+/*
+
+    for  (i = 0; i < gallery.length; i++) {
+
+        console.log(gallery[i]);
+
+        imgSource.setAttribute("src", gallery[i]);
+
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
 
 })();
+
+/*
+gallery.forEach(myFunction);
+
+function myFunction(value,i) {
+
+    var x = value;
+
+    console.log(x);
+
+    imgSource.setAttribute("src", x);
+
+}*/
