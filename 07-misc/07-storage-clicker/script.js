@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    // add event listener to button
+
+    document.getElementById("increment").addEventListener("click", function(){
+
+        var value = +(document.getElementById("target").innerHTML);
+
+            value++;
+            document.getElementById("target").innerHTML = value;
+
+    })
 
 })();
