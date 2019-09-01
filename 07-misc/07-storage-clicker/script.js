@@ -11,15 +11,25 @@
 
 (function() {
 
+
+    document.getElementById("target").innerHTML = window.localStorage.getItem('number');
+    var value = +(document.getElementById("target").innerHTML);
+
+
+
     // add event listener to button
 
     document.getElementById("increment").addEventListener("click", function(){
-
-        var value = +(document.getElementById("target").innerHTML);
-
             value++;
             document.getElementById("target").innerHTML = value;
+
+            window.localStorage.setItem('number', JSON.stringify(value));
 
     })
 
 })();
+
+
+//syntax: window.localStorage
+// localStorage.setItem("key", "value");  //saving data
+// var lastname = localStorage.getItem("key");  //reading it
