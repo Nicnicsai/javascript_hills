@@ -9,34 +9,34 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
+(function () {
+
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
         // your code here
 
-       var n = Number(document.getElementById("number").value);
-            // 3
+        var n = Number(document.getElementById("number").value);
+        // 3
+
         var total = 1;
 
-
-         for (let i = 1; i <= n; i++) {
-
+        for (let i = 1; i <= n; i++) {
             total = total * i;
-
             console.log(total);
         }
 
         // show the result
-        alert (total);
+        alert(total);
 
 
-         //loop
+        //loop
         // x-keer erover
 
 
     });
 
 })();
+
+

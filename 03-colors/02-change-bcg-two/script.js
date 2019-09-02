@@ -13,4 +13,12 @@
 
     // your code here
 
+    var n = document.getElementById("color").value;
+
+    document.getElementById("run").addEventListener("click",function() {
+        console.log(document.body.style.background = n);
+    });
+
+
+
 })();

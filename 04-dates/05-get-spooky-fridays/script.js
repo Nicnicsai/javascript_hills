@@ -6,7 +6,7 @@
 
 
     d.setFullYear(input_year, 0, 13);
-    //console.log(d);
+
 
     var current_month_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
