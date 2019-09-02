@@ -20,12 +20,12 @@
                 console.log(data);
 
 
-               /* var name = data.heroes[i].name;
-                var alterEgo = data.heroes[i].alterEgo;
-                var powers = data.heroes[i].abilities;*/
+                /* var name = data.heroes[i].name;
+                 var alterEgo = data.heroes[i].alterEgo;
+                 var powers = data.heroes[i].abilities;*/
 
 
-             //get info from input
+                //get info from input
 
                 var newName = document.getElementById("hero-name").value;
                 var newAlterEgo = document.getElementById("hero-alter-ego").value;
@@ -40,21 +40,12 @@
                     abilities: newPowers
                 };
 
+                console.log(newHero);
+
 
                 data.heroes.push(newHero);
 
                 console.log(data.heroes);
-
-
-
-
-
-
-
-
-
-
-
 
 
             })

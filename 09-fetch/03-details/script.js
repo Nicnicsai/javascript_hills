@@ -26,7 +26,6 @@
 
                 function findHero(hero){
                     return hero.id == value; // found hero with ID.. == string and number so not ===
-
                 }
 
                var heroInfo = data.heroes.find(findHero);
@@ -42,8 +41,6 @@
 
                     var powers = data.heroes[value].abilities;
 
-
-
                     //show template
 
                     var clon = temp.content.cloneNode(true); //clone floats around in memory
@@ -58,9 +55,6 @@
                     // here append clone and therefore becomes element
 
                     document.getElementById("target").appendChild(clon); // template cloned and put here
-
-
-
 
             })
 
