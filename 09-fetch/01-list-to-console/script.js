@@ -10,5 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener('click',function() {
+
+        fetch ('http://localhost:63342/becode_projects/javascript_hills/_shared/api.json')   //check which is the portname
+            .then(function(response) {
+            return response.json();
+        })
+            .then(function(data) {
+            console.log(data);
+        })
+
+
+
+
+
+    })
+
+
+
+
+
 })();
