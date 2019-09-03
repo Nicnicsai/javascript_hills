@@ -11,30 +11,72 @@
 
 (() => {
 
-    let posts, comment; // we dont know yet if its an array
+    let posts, comments;
 
-    // click button
+    // when you click a button
+document.getElementById("run").addEventListener("click", function(){
 
-    document.getElementById("run").addEventListener("click", function () {
+    window.lib.getPosts(function(error, articles){
 
-        //call the getPosts function
+        posts = articles; //array van 9
+        //console.log(posts);
 
-        window.lib.getPosts(function (error, articles) {
-            posts = articles; //an array of articles
-            posts.forEach(function (post) { //for each recovered article call the getComments function
-                //+ add the comments property (if it has one, otherwise nothing)
+        posts.forEach(function(post) {
 
-                window.lib.getComments(null, function (error, Comments) {
-                    //check callbacks.js > comments > has two parameters/ Comments ipv articles
+            window.lib.getComments(null, function(error, pushComments){
 
-                    comment = Comments[post.id];
-                    if (comment !== undefined) { //if comment exists > add comment to post
-                        post.comment = comment;
-                        console.log(post);
-                    }
-                })
+                comments = pushComments[post.id];
+
+                if ( comments !== undefined) {
+                    post.comment = comments; //we create the property called "comment" and assign the Pushed comments to it
+                }
+                console.log(post);
+
+            });
+
+
+        });
+
+
+    });
+
+
+
+});
+
+
+
+
+})();
+
+
+
+
+
+
+/*
+let posts, comment; // we dont know yet if its an array
+
+// click button
+
+document.getElementById("run").addEventListener("click", function () {
+
+    //call the getPosts function
+
+    window.lib.getPosts(function (error, articles) {
+        posts = articles; //an array of articles
+        posts.forEach(function (post) { //for each recovered article call the getComments function
+            //+ add the comments property (if it has one, otherwise nothing)
+
+            window.lib.getComments(null, function (error, Comments) {
+                //check callbacks.js > comments > has two parameters/ Comments ipv articles
+
+                comment = Comments[post.id];
+                if (comment !== undefined) { //if comment exists > add comment to post
+                    post.comment = comment;
+                    console.log(post);
+                }
             })
         })
     })
-
-})();
+})*/

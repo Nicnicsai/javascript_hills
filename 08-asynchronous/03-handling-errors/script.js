@@ -10,5 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function () {
+
+        window.lib.getPersons(function (error, arrayPeople) {
+
+            if (arrayPeople !== undefined) { //if arrayPeople is not undefined > so defined > then show this one
+                console.log(arrayPeople);
+            }
+            if (arrayPeople == undefined) { // if arrayPeople is undefined > then show error message
+                console.log(error);
+            }
+
+        });
+
+    });
+
+
 })();
