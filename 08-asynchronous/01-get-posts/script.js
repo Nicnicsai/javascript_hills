@@ -10,5 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    //window.lib.getPosts()
+
+    // receive callback parameter
+
+    //two parameters in callback
+    //frist one an error (if there is, otherwise null)
+    //second:array of articles
+
+    //callback method
+
+    document.getElementById("run").addEventListener('click',() => {
+        window.lib.getPosts(function(error, articles){
+            //myCallback(error, articles);
+            console.log(articles);
+
+        });
+
+
+    });
+
+    //get posts + display items in console (never returns error)
+
+
+
     // your code here
 })();

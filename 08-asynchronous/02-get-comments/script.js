@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+
+document.getElementById("run").addEventListener("click", function() {
+
+    window.lib.getComments(null, function(error, articles){
+        console.log(articles);
+
+    })
+
+})
+
+
 })();

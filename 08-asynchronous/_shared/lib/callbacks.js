@@ -9,9 +9,9 @@
 ((ns, utils) => {
     ns.wait = (delay, next) => setTimeout(next, delay);
 
-    ns.getPosts = next =>
+    ns.getPosts = next => //function
         ns.wait(1000, () =>
-            next(
+            next(     //calling the function next/ two parameters
                 null,
                 Array.from(new Array(utils.getRandomInt(5, 10)).keys()).map(
                     id => ({id, ...utils.generatePost()}),
