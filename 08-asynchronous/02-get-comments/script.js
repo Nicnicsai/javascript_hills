@@ -15,33 +15,26 @@
 
     // click button
 
-document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-    //
+        //call the getPosts function
 
-    window.lib.getPosts(function(error, articles){
-        posts = articles;
-        posts.forEach(function (post){
+        window.lib.getPosts(function (error, articles) {
+            posts = articles; //an array of articles
+            posts.forEach(function (post) { //for each recovered article call the getComments function
+                //+ add the comments property (if it has one, otherwise nothing)
 
-            window.lib.getComments(null, function(error, getComments){
+                window.lib.getComments(null, function (error, Comments) {
+                    //check callbacks.js > comments > has two parameters/ Comments ipv articles
 
-                comment = getComments[post.id];
-                if (comment !== undefined) {
-                    post.comment = comment;
-                    console.log(post);
-
-                }
-
-
+                    comment = Comments[post.id];
+                    if (comment !== undefined) { //if comment exists > add comment to post
+                        post.comment = comment;
+                        console.log(post);
+                    }
+                })
             })
-
-
         })
-
-
     })
-
-})
-
 
 })();
