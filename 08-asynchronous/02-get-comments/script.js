@@ -10,12 +10,34 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    let posts, comment; // we dont know yet if its an array
+
+    // click button
 
 document.getElementById("run").addEventListener("click", function() {
 
-    window.lib.getComments(null, function(error, articles){
-        console.log(articles);
+    //
+
+    window.lib.getPosts(function(error, articles){
+        posts = articles;
+        posts.forEach(function (post){
+
+            window.lib.getComments(null, function(error, getComments){
+
+                comment = getComments[post.id];
+                if (comment !== undefined) {
+                    post.comment = comment;
+                    console.log(post);
+
+                }
+
+
+            })
+
+
+        })
+
 
     })
 
