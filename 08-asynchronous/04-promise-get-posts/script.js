@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
+
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+
+        window.lib.getPosts().then(promiseCompleted);
+
+    });
+
+    function promiseCompleted(resultArray) {
+        //array1.forEach(function(element) {
+        //  console.log(element);
+        //});
+
+        console.log(resultArray);
+    }
+
+
+
+
 })();
