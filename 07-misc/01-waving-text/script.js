@@ -20,8 +20,6 @@
     var pos = 0; //counter
 
 
-
-
     for (var i=0; i < wave.length ; i++) {  //define the i with var/let
 
 

@@ -11,13 +11,12 @@
 
 (function () {
 
-
-
     var d = new Date().getHours();
+    const MAX_HOUR = 18;
 
-    console.log(d);
+    // use constant instead of number (so other people know where it comes from)
 
-    if (d < 18) {
+    if (d < MAX_HOUR) {
 
         var a = document.getElementById("target").innerHTML = "Hello";
 

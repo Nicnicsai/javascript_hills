@@ -16,7 +16,7 @@
     // receive callback parameter
 
     //two parameters in callback
-    //frist one an error (if there is, otherwise null)
+    //first one an error (if there is, otherwise null)
     //second:array of articles
 
     //callback method
@@ -32,8 +32,6 @@
     });
 
     //get posts + display items in console (never returns error)
-
-
 
     // your code here
 })();

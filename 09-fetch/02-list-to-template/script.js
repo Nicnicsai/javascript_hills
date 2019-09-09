@@ -42,7 +42,6 @@
                     //show template
 
                     var clon = temp.content.cloneNode(true); //clone floats around in memory
-
                     console.log(clon);
                     // assign values to this clone
 
