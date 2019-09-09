@@ -19,7 +19,6 @@
     if (d < MAX_HOUR) {
 
         var a = document.getElementById("target").innerHTML = "Hello";
-
     } else {
         var b = document.getElementById("target").innerHTML = "Good evening!";
     }

@@ -1,13 +1,12 @@
 (function () {
 
+    //forgot click event
+    //check Mahmouts code
 
     var input_year = document.getElementById("year").value; //input year
     var d = new Date();
 
-
     d.setFullYear(input_year, 0, 13);
-
-
     var current_month_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     var res_months = []; //empty array
