@@ -13,12 +13,11 @@
 
         if (numberL >= 8) {
 
-
-            for (i = 0; i < numberL ; i++) {
+            for (i = 0; i < numberL; i++) {
 
                 var y = passOne.charAt(i);
 
-                if ( y >= 0 && y <= 9){
+                if (y >= 0 && y <= 9) {
 
                     n++;
 
@@ -29,12 +28,8 @@
                     }
 
                 }
-
             }
-
-
         }
-
 
     })
 
@@ -43,3 +38,4 @@
 
 
 // Jan, Ines zijn code bekijken (andere manier)
+//regEx101
