@@ -13,6 +13,7 @@
 
 
     document.getElementById("target").innerHTML = window.localStorage.getItem('number');
+
     var value = +(document.getElementById("target").innerHTML);
 
 
@@ -20,7 +21,7 @@
     // add event listener to button
 
     document.getElementById("increment").addEventListener("click", function(){
-            value++;
+            value++;  //possible because it's a number
             document.getElementById("target").innerHTML = value;
 
             window.localStorage.setItem('number', JSON.stringify(value));
