@@ -33,5 +33,5 @@
 
 })();
 
-
 //deze oefening herbekijken
+//createTextNode (look it up)
