@@ -22,9 +22,11 @@
 
     document.getElementById("increment").addEventListener("click", function(){
             value++;  //possible because it's a number
+
             document.getElementById("target").innerHTML = value;
 
-            window.localStorage.setItem('number', JSON.stringify(value));
+            window.localStorage.setItem('number', JSON.stringify(value)); //set value of local storage item
+       // need to be string > changes it back to number later> because need to add numbers
 
     })
 
