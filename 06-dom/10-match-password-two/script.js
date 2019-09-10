@@ -11,11 +11,6 @@
 
 (function() {
 
-
-
-
-
-
     document.getElementById("run").addEventListener("click", function() {
 
         var passOne = document.getElementById("pass-one").value;
@@ -41,10 +36,9 @@
 
         }
 
-
-
     })
 
-
-
 })();
+
+
+//check bona code
