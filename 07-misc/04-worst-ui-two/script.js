@@ -32,16 +32,11 @@
                 document.getElementById("part-three").innerHTML +
                 document.getElementById("part-four").innerHTML;
 
-
-
-
-
-
-
         });
     });
 
 })();
+
 
 
 /*
@@ -77,11 +72,6 @@ buttons.forEach(myFunction);
 
 function myFunction(element) {
     element.addEventListener('click', function() {
-
-
-
-
-
 
     })
 

@@ -16,6 +16,6 @@ var output = document.getElementById("target");
         output.innerHTML = "0" + this.value;
     }
 
-
-
 })();
+
+//check code Manny but add Padstart
