@@ -11,8 +11,29 @@
 
 (function() {
 
-    //NEW CODE
+    // NINJA CODE
     
+        document.querySelectorAll('button[type="button"]').forEach(function ($btn) {
+       $btn.addEventListener("click", function () {
+
+           let colorSelected = $btn.id;
+
+           let list = {
+               'red': 'lightpink',
+               'green': 'lightgreen',
+               'yellow' : 'lightyellow',
+               'blue' : 'lightblue'
+           };
+
+           document.body.style.backgroundColor = list[colorSelected];
+
+       });
+    })
+    
+    
+    
+    /* 
+    //NEW CODE
     document.querySelectorAll('button[type="button"]').forEach(function ($btn) {
        $btn.addEventListener("click", function () {
 
@@ -36,7 +57,7 @@
 
        });
     })
-    
+   */ 
 
 /* 
 //OLD CODE
