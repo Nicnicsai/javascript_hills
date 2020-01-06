@@ -16,11 +16,16 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+/*
 var i;
 for (i = 1; i < 22; i++) {
     alert(i*i);
-}
+}*/
+        
+        
+        for (let i = 1; i <= 21; i++) {
+            alert(Math.pow(i, 2));
+        }
 
 
 
