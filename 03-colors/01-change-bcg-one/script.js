@@ -11,8 +11,35 @@
 
 (function() {
 
+    //NEW CODE
+    
+    document.querySelectorAll('button[type="button"]').forEach(function ($btn) {
+       $btn.addEventListener("click", function () {
+
+           let colorSelected = $btn.id;
+
+           switch (colorSelected) {
+               case "red":
+                   document.body.style.backgroundColor = "lightpink";
+                   break;
+               case "green":
+                   document.body.style.backgroundColor = "lightgreen";
+                   break;
+               case "yellow":
+                   document.body.style.backgroundColor = "lightyellow";
+                   break;
+               case "blue":
+                   document.body.style.backgroundColor = "lightblue";
+                   break;
+           }
 
 
+       });
+    })
+    
+
+/* 
+//OLD CODE
     document.getElementById("red").addEventListener("click", function(){
         document.body.style.background = "red";
     });
@@ -28,8 +55,7 @@
     document.getElementById("blue").addEventListener("click", function(){
         document.body.style.background = "blue";
     });
-
-
+*/
 
 
 
