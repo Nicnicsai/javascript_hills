@@ -1,8 +1,39 @@
 (function () {
 
-    //check bernardo's code
-    //new Date(....,...,...)
+    
+    document.getElementById("run").addEventListener("click", function () {
+        let birthDay = +(document.getElementById("dob-day").value);
+        let birthMonth = +(document.getElementById("dob-month").value);
+        let birthYear = +(document.getElementById("dob-year").value);
 
+        let D = new Date();
+        let currentDay = D.getDate();
+        let currentMonth = D.getMonth() + 1;
+        let currentYear = D.getFullYear();
+
+        let currentAge;
+        let startAge = currentYear - birthYear;
+
+
+        if (currentMonth > birthMonth) {
+            currentAge = startAge;
+        } else if (currentMonth < birthMonth) {
+            currentAge = startAge - 1;
+        } else if (currentMonth = birthMonth) {
+            if (currentDay < birthDay) {
+                currentAge = startAge - 1;
+            } else if (currentDay => birthDay) {
+                currentAge = startAge;
+            }
+        }
+
+        document.querySelectorAll("p")[0].innerText = "You are " + currentAge + " years old.";
+
+    });
+   
+})();
+
+/*
     document.getElementById("run").addEventListener('click', function () {
 
         var current_d = new Date().getDate();
@@ -33,7 +64,6 @@
         alert(age);
 
     });
+*/
 
-
-})();
 
