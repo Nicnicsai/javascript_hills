@@ -1,25 +1,40 @@
 (function () {
 
-    //forgot click event
-    //check Mahmouts code
+document.getElementById("run").addEventListener('click', function () {
 
-    var input_year = document.getElementById("year").value; //input year
+        let d = new Date();
+        let inputYear = +(document.getElementById("year").value);
+
+        for (let m = 0 ; m <= 11; m++) {
+
+            d.setFullYear(inputYear);
+            d.setDate(13);
+            d.setMonth(m);
+            //d.setFullYear(inputYear, m, 13);
+            if (d.getDay() === 5) { //if is friday
+                console.log(d);
+            }
+        }
+
+    })
+    
+    
+    
+/*
+    var input_year = document.getElementById("year").value; 
     var d = new Date();
 
     d.setFullYear(input_year, 0, 13);
     var current_month_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    var res_months = []; //empty array
+    var res_months = []; 
 
     for (var m = 0; m < 12; m++) {
-        //set the date again with m
+      
         d.setMonth(m);
-        // console.log(d);
-
-        // ask if it is friday
+       
 
         if (d.getDay() === 5) {
-            //get the month(-name)
 
             current_month_name[d.getMonth()];
 
@@ -28,5 +43,6 @@
     }
 
     alert(res_months);
-
+*/
+    
 })();
