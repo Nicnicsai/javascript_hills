@@ -9,78 +9,27 @@
         "../../_shared/img/map.svg",
     ];
 
-    // click button
 
-    var imgSource = document.getElementsByTagName("img")[0];
-    //console.log(imgSource);
+    
+    let img = document.querySelector("figure img");
+    let imgSrc = img.getAttribute("src");
 
-
-
-    document.getElementById("next").addEventListener("click", function() {
+    let firstIndex = gallery.indexOf(imgSrc); //0
 
 
-        // kan het opgelost worden met een forEach? nee, anders loopt het tot het einde
+    document.getElementById("next").addEventListener("click", function () {
 
-        var firstOne = imgSource.getAttribute("src"); //link of first one
-        var firstIndex = gallery.indexOf(firstOne); // index of first one
-
-        if (firstIndex === 4) {
+        if(firstIndex === (gallery.length - 1)){
             firstIndex = 0;
-
         } else {
-
-            firstIndex ++
+            firstIndex++
         }
 
-        imgSource.setAttribute("src", gallery[firstIndex]);
-
-        console.log(firstIndex);
-
-
-
-
-       // imgSource.setAttribute("src", gallery[i+1]);
-
-/*
-
-    for  (i = 0; i < gallery.length; i++) {
-
-        console.log(gallery[i]);
-
-        imgSource.setAttribute("src", gallery[i]);
-
-    }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        img.setAttribute("src", gallery[firstIndex]);
 
     })
 
+
 })();
 
-/*
-gallery.forEach(myFunction);
 
-function myFunction(value,i) {
-
-    var x = value;
-
-    console.log(x);
-
-    imgSource.setAttribute("src", x);
-
-}*/
