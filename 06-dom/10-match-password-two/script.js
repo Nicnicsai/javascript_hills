@@ -39,6 +39,3 @@
     })
 
 })();
-
-
-//check bona code
